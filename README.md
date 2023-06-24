@@ -6,4 +6,4 @@ Data structures can be categorized into two types: primitive data structures and
 
 The choice of data structure for a particular task depends on the type and amount of data to be processed, the operations that need to be performed on the data, and the efficiency requirements of the program. Efficient use of data structures can greatly improve the performance of a program, making it faster and more memory-efficient. A data structure is a particular way of organizing data in a computer so that it can be used effectively. The idea is to reduce the space and time complexities of different tasks. 
 
-![image](https://github.com/AtifSayeed/Work_DSA/assets/85532890/22cddecd-923a-42d7-8d6c-a539a3a91eaa)
+![image](https://github.com/AtifSayeed/Work_DSA/assets/85532890/f740b3b7-80a1-42e0-ad98-c6966387be1d)
