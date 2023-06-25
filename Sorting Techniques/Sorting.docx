@@ -1,0 +1,51 @@
+Sorting Techniques:
+1.Selection Sort
+2.Bubble Sort
+3.Insertion Sort
+4.Merge Sort
+5.Recursive Bubble Sort
+6.Recursive Insertion Sort
+7.Quick Sort
+
+There are many more techniques, but these are efficient and sufficient i guess to crack an Interview.
+
+Selection Sort:
+
+selection of minimum from the above list and Swap
+[get the minimum and swap]
+
+public class MyClass{
+    public void SelectionSort(int arr[], int n){
+        for(int i=0;i<n-1;i++){
+            int mini = i;
+            for(int j=i+1;j<n;j++){
+                if(arr[j]<arr[i]){
+                    mini=j;
+                }
+            }
+            //swap
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        }
+        System.out.print("After Selection Sorting");
+        for(int i=0;i<n;i++){
+            System.out.print(arr[i]+" ");
+        }
+        System.out.println();
+    }
+    public static void main(String[] args){
+        Scanner sc = new Scanner(system.in);
+        int arr[] = {10,25,8,....};
+        int n = arr.length;
+        System.out.println("Before Selection Sorting");
+        for(int i=0;i<n;i++){
+            System.out.print(arr[i]+" ");
+        }
+        System.out.println();
+        SelctionSort(arr[], n);
+    }
+}
+
+time Complexity - O[N*N]
+Space Complexity- O[1]
