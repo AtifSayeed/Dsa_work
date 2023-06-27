@@ -120,3 +120,6 @@ public class Class{
 
 Time Complexity = O[n-1]*O[n-1/2] => O[N*2]
 Space Complexity = O[1]
+
+working on array problems
+
