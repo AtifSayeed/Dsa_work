@@ -1,0 +1,61 @@
+Array:
+An array is a collection of items of same data type stored at contiguous memory locations. 
+
+Problems
+Check if Arrays are Sorted
+
+class Solution {
+    public boolean check(int[] nums) {
+     int count =0;
+     for(int i=0; i<nums.length; i++){
+         if(nums[i] > nums[(i+1) % nums.length])
+         count++;
+     }
+     return count > 1? false : true;
+    }
+}
+Time Complexity: O[N]
+Space Complexity:O[1]
+
+Remove Duplicates from Sorted Array:
+
+class Solution {
+    public int removeDuplicates(int[] nums) {
+        int j = 1;
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] != nums[i - 1]) {
+                nums[j] = nums[i];
+                j++;
+            }
+        }
+        return j;
+    }
+}
+
+Time Complexity: O[N]
+Space Complexity:O[1]
+
+Rotate Array:
+
+class Solution {
+
+public void rotate(int[] nums, int k) {
+    k %= nums.length;
+    reverse(nums, 0, nums.length - 1);
+    reverse(nums, 0, k - 1);
+    reverse(nums, k, nums.length - 1);
+}
+
+public void reverse(int[] nums, int start, int end) {
+    while (start < end) {
+        int temp = nums[start];
+        nums[start] = nums[end];
+        nums[end] = temp;
+        start++;
+        end--;
+    }
+}
+}
+
+Time Complexity: O[N]
+Space Complexity: O[1]
