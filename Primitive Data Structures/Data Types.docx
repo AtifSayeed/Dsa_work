@@ -1,0 +1,78 @@
+byte:
+class Main {
+  public static void main(String[] args) {
+
+    byte range;
+    range = 124;
+    System.out.println(range);    // prints 124
+  }
+}
+
+short:
+class Main {
+  public static void main(String[] args) {
+    	
+    short temperature;
+    temperature = -200;
+    System.out.println(temperature);  // prints -200
+  }
+}
+
+int:
+int myNum = 5;               // Integer (whole number)
+class Main {
+  public static void main(String[] args) {
+    	
+    int range = -4250000;
+    System.out.println(range);  // print -4250000
+  }
+}
+
+long:
+class LongExample {
+  public static void main(String[] args) {
+    	
+    long range = -42332200000L;
+    System.out.println(range);    // prints -42332200000
+  }
+}
+
+float myFloatNum = 5.99f;    // Floating point number
+class Main {
+  public static void main(String[] args) {
+    	
+    float number = -42.3f;
+    System.out.println(number);  // prints -42.3
+  }
+}
+
+double:
+class Main {
+  public static void main(String[] args) {
+    	
+    double number = -42.3;
+    System.out.println(number);  // prints -42.3
+  }
+}
+char:
+char myLetter = 'D';         // Character
+class Main {
+  public static void main(String[] args) {
+    	
+    char letter = '\u0051';
+    System.out.println(letter);  // prints Q
+  }
+}
+
+boolean:
+boolean myBool = true;       // Boolean
+class Main {
+  public static void main(String[] args) {
+    	
+    boolean flag = true;
+    System.out.println(flag);    // prints true
+  }
+}
+
+String:
+String myText = "Hello";     // String
