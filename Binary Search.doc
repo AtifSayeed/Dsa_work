@@ -1,0 +1,39 @@
+Binary Search is defined as a searching algorithm used in a sorted array by repeatedly dividing the search interval in half. The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(log N). 
+
+Binary Search Algorithm:
+1.Divide the search space into two halves by finding the middle index “mid”. 
+    finding the middle index "mid" in Binary Search Algorithm   
+    Finding the middle index “mid” in Binary Search Algorithm
+
+2.Compare the middle element of the search space with the key. 
+3.If the key is found at middle element, the process is terminated.
+4.If the key is not found at middle element, choose which half will be used as the next search space.
+    If the key is smaller than the middle element, then the left side is used for next search.
+    If the key is larger than the middle element, then the right side is used for next search.
+This process is continued until the key is found or the total search space is exhausted.
+
+Problem Iterative:
+class Solution {
+    public int search(int[] nums, int target) {
+        int n =nums.length;
+        int low = 0;
+        int high = n-1;
+        while(low<=high){
+            int mid=(low+high)/2;
+            if(nums[mid] == target) return mid;
+            else if(target > nums[mid]) low=mid+1;
+            else high = mid-1;
+        }
+        return -1;
+    }
+}
+
+Lower and upper Bound:
+
+lower = arr[i] >= x;
+upper = arr[i] > x;
+The upper bound algorithm finds the first or the smallest index in a sorted array where the value at that index is greater than the given key i.e. x.
+
+The upper bound is the smallest index, ind, where arr[ind] > x.
+
+But if any such index is not found, the upper bound algorithm returns n i.e. size of the given array. The main difference between the lower and upper bound is in the condition. For the lower bound the condition was arr[ind] >= x and here, in the case of the upper bound, it is arr[ind] > x.
