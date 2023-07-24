@@ -37,3 +37,27 @@ The upper bound algorithm finds the first or the smallest index in a sorted arra
 The upper bound is the smallest index, ind, where arr[ind] > x.
 
 But if any such index is not found, the upper bound algorithm returns n i.e. size of the given array. The main difference between the lower and upper bound is in the condition. For the lower bound the condition was arr[ind] >= x and here, in the case of the upper bound, it is arr[ind] > x.
+
+Seatrch Index:
+
+class Solution {
+    public int searchInsert(int[] nums, int target) {
+       int start = 0;
+        int end = nums.length - 1;
+
+        while(start < end)
+        {
+            int mid = (start + end) / 2;
+            if(target == nums[mid])
+                return mid;
+            else if(nums[mid] < target)
+                start = mid + 1;
+            else
+                end = mid - 1;
+        }
+        int mid = (start + end) / 2;
+        if(nums[mid] < target)
+            return mid + 1;
+        return mid;  
+    }
+}
